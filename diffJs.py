@@ -20,7 +20,9 @@ if not first_time :
 os.system('./javascript_files_extractor.py '+all_domains+' ./temp/js_files.txt')
 os.system('./javascript_files_link_extractor.sh ./temp/js_files.txt ./temp/urls.txt ./dependency/relative-url-extractor/extract.rb')
 os.system('cp ./temp/urls.txt '+toolpath+'/results/'+domain)
-os.system('git add . && git commit -m \"'+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")+domain+'\"')
 
 if not first_time:
 	os.system('git diff HEAD^ HEAD')
+
+
+os.system('git add . && git commit -m \"'+datetime.datetime.now().strftime("%I:%M%p on %B %d, %Y")+domain+'\"')
