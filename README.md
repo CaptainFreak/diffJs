@@ -6,7 +6,7 @@ DiffJs is a script to monitor changes in javascript files on domains.
 3. Run `chmod +x install.sh`
 4. Run `./install.sh`
 5. Replace "MY_OWN_WEBHOOK_URL_HERE" with your Webhook URL from `step #2`in `sendmail.sh`.
-6. Setup [CRON] job for your system to run `./diffJs.py` as required. 
+6. Setup [CRON] job for your system to run `./diffJs.py domain.com` as required. 
  
    Note : This tool is built upon following awesome tools :
    1. [relative-url-extractor] by [@jobert]
