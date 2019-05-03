@@ -1,4 +1,4 @@
-if [[ $(git diff HEAD) ]]; then
+if [ "$(git diff HEAD)" ]; then
   
   git diff HEAD > ./results/$1/changes.txt
   date >> ./results/$1/changes.txt
